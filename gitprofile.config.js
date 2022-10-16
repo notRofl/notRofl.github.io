@@ -20,7 +20,10 @@ const config = {
     'CSS'
   ],
   experiences: [
-    
+    company: 'Spectral',
+    position: 'Founder',
+    from: '14/8/22',
+    to: 'Present',
   ],
   education: [
    
