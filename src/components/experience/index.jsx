@@ -49,7 +49,7 @@ const Experience = ({ experiences, loading }) => {
                   skeleton({ width: 'w-32', height: 'h-8' })
                 ) : (
                   <span className="text-base-content opacity-70">
-                    Experience
+                    My Projects
                   </span>
                 )}
               </h5>
