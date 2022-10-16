@@ -2,7 +2,7 @@
 
 const config = {
   github: {
-    username: 'arifszn', // Your GitHub org/user name. (Required)
+    username: 'sleepyrofl', // Your GitHub org/user name. (Required)
     sortBy: 'stars', // stars | updated
     limit: 10, // How many projects to display.
     exclude: {
@@ -22,9 +22,6 @@ const config = {
     website: 'https://arifszn.github.io',
     phone: '',
     email: 'arifulalamszn@gmail.com',
-  },
-  resume: {
-    fileUrl: 'resume.pdf', // Empty fileUrl will hide the `Download Resume` button.
   },
   skills: [
     'PHP',
