@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 import { fallbackImage, skeleton } from '../../helpers/utils';
 import LazyImage from '../lazy-image';
 
-const AvatarCard = ({ profile, loading, avatarRing, resume }) => {
+const AvatarCard = ({ profile, loading, avatarRing }) => {
   return (
     <div className="card shadow-lg compact bg-base-100">
       <div className="grid place-items-center py-8">
@@ -55,22 +55,6 @@ const AvatarCard = ({ profile, loading, avatarRing, resume }) => {
               : profile.bio}
           </div>
         </div>
-        {resume?.fileUrl &&
-          (loading ? (
-            <div className="mt-6">
-              {skeleton({ width: 'w-40', height: 'h-10' })}
-            </div>
-          ) : (
-            <a
-              href={resume.fileUrl}
-              target="_blank"
-              className="btn btn-outline btn-primary text-xs mt-6"
-              download
-              rel="noreferrer"
-            >
-              Download Resume
-            </a>
-          ))}
       </div>
     </div>
   );
@@ -80,9 +64,6 @@ AvatarCard.propTypes = {
   profile: PropTypes.object,
   loading: PropTypes.bool.isRequired,
   avatarRing: PropTypes.bool.isRequired,
-  resume: PropTypes.shape({
-    fileUrl: PropTypes.string,
-  }),
 };
 
 export default AvatarCard;
